@@ -1,0 +1,166 @@
+.shadow {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3)
+}
+
+.marker {
+    padding-bottom: 3px;
+    background: linear-gradient(transparent 70%, #FFD412 70%);
+}
+
+.fantasy {
+    font-family: fantasy;
+}
+
+.top-h2 {
+    background: linear-gradient(-45deg, rgba(255, 49, 49, 0.8), rgba(93, 129, 255, 0.8));
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff
+}
+
+/* ページネーション部分 */
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    position: relative;
+    font-size: 13px;
+}
+.pagination span, .pagination a {
+    display: block;
+    width: auto;
+    margin: 4px;
+    padding: 8px;
+    background-color: rgb(189, 158, 197);
+    text-decoration: none;
+    text-align: center;
+    line-height: 16px;
+    border-radius: 20px;
+}
+.pagination .pager{
+    width: 32px;
+}
+.pagination a:hover,
+.pagination .current  {
+    color: #fff;
+    border-color: #000;
+    background-color: rgb(231, 119, 194);
+}
+.pagination a.prev {
+    margin-right: 16px;
+}
+.pagination a.next {
+    margin-left: 16px;
+}
+.pagination a.first {}
+.pagination a.last {}
+.pagination span.page_num {
+    display: none;
+}
+@media (min-width: 768px) {
+    .pagination {
+        margin: 40px 0;
+    }
+}
+
+/* リボン */
+.ribbon-wrapper {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+}
+.ribbon-content {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 89px;
+    height: 91px;
+    overflow: hidden;
+}
+.ribbon {
+    display: inline-block;
+    position: absolute;
+    padding: 7px 0;
+    left: -23px;
+    top: 22px;
+    width: 160px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 16px;
+    background: #f1a500;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #fdcb24, #ff7f68);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f0c91a, #ff7f68); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    text-shadow: 0 2px 2px #929292;
+    letter-spacing: 0.05em;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.ribbon:before, .ribbon:after {
+    position: absolute;
+    content: "";
+    border-top: 4px solid #ff3c00;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    bottom: -4px;
+}
+.ribbon:before {
+    left: 14px;
+}
+.ribbon:after {
+    right: 18px;
+}
+
+.ribbon7 {
+    display: inline-block;
+    width: max-content;
+    position: relative;
+    padding: 7px 10px;
+    font-size: 8px;
+    color: #FFF;
+    background: #555;
+    top: 5px;
+    left: -10px;
+    z-index: 1;
+}
+
+.ribbon7:before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    border: none;
+    border-bottom: solid 10px transparent;
+    border-right: solid 10px #999;
+}
+.ribbon7 a {
+    color: #fff;
+}
+@media (min-width: 768px) {
+    .ribbon7 {
+        font-size: 12px;
+    }
+}
+
+.check {
+    font-weight: 300;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+.check::before {
+    content: "";
+    background-image: url(img/check.png);
+    content: '';
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    z-index: 1080;
+    margin-right: 10px;
+}
+
