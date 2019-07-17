@@ -1,0 +1,107 @@
+﻿@charset "UTF-8";
+
+/*--------------------------------------------------------------
+Theme Name: citydunk original theme
+Theme URI:
+Description:
+Author: hayasan
+Author URI:
+Version: 1.0
+---------------------------------------------------------------*/
+
+.bg-purple {
+    background-color: #b792b7!important;
+}
+
+.top-bg{
+    background: linear-gradient(-45deg, rgba(255, 49, 49, 0.8), rgba(93, 129, 255, 0.8)), url(img/main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    height: 100vh;
+}
+
+.bg-foot{
+    background: linear-gradient(-45deg, rgba(30, 30, 30, 0.8), rgb(70, 70, 70)), url(img/logo_re.png);
+    background-size: initial;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.view-wrap {
+    height: 76vh;
+    width: 100%;
+    display: table;
+}
+
+.view {
+    display: table-cell;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.main-wrap {
+    overflow: hidden;
+    margin: -100px 0 0 0;
+}
+
+.img-wrap-right {
+    height: 210px;
+    position: relative;
+    max-width: 1040px;
+    /* margin-top: -140px; */
+}
+.img-wrap-right img {
+    width: 400px;
+}
+
+.img-wrap-left {
+    height: 230px;
+    position: relative;
+    max-width: 1040px;
+}
+
+.img-left {
+    position: absolute;
+    vertical-align: middle;
+    border-style: none;
+    right: 0;
+    width: 400px;
+}
+
+@media (min-width: 768px) {
+    .img-wrap-right {
+        height: 500px;
+        position: relative;
+        max-width: 1040px;
+        /* margin-top: -140px; */
+    }
+    .img-wrap-right img {
+        width: 800px;
+    }
+    .img-wrap-left {
+        height: 500px;
+        position: relative;
+        max-width: 1040px;
+        left: -50px;
+    }
+    
+    .img-left {
+        position: absolute;
+        vertical-align: middle;
+        border-style: none;
+        right: 0;
+        width: 800px;
+    }
+}
+
+
+.relative {
+    position: relative;
+}
+
+.radius {
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px #999;
+}
