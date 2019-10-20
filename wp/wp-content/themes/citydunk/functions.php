@@ -26,6 +26,14 @@ register_sidebar( array(
     'after_title' => '</h2>',
 ) );
 register_sidebar( array(
+    'name' => 'topbar',
+    'id' => 'topbar',
+    'before_widget' => '<div class="sidebar">',
+    'after_widget' => '</div>',
+    'before_title' => '<h2 class="rounded">',
+    'after_title' => '</h2>',
+) );
+register_sidebar( array(
     'name' => 'footer_left',
     'id' => 'footer_left',
     'before_widget' => '<div class="sidebar mb-3">',

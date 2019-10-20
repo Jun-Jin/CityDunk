@@ -24,10 +24,7 @@ Template Name: TopPageカスタムテンプレート
                     <h2 class="h2"><?php bloginfo('description'); ?></h2>
                     <hr>
                     <div class="m-5 pb-5">
-                        <p class="h4 mb-3">このサイトは、JOYTEA株式会社が手掛けるスマホアプリ</p>
-                        <p class="h4 mb-3">「CityDunk(シティダンク)」を楽しむ有志が集まり</p>
-                        <p class="h4 mb-3">運営している非公式攻略サイトになります。</p>
-                        <p class="h4 mb-3">CityDunkの更なる盛り上がりを応援し、役立つ情報を提供しています。</p>
+                        <p class="h4 mb-3">「CityDunk(シティダンク)」有志による非公式攻略サイト</p>
                     </div>
                     <div class="row m-5 pb-5">
                         <div class="col-12">
@@ -38,16 +35,34 @@ Template Name: TopPageカスタムテンプレート
                                 <?php query_posts('&posts_per_page=3'); ?>
                                 <?php if(have_posts()): while(have_posts()): the_post(); ?>
                                     <div class="card">
-                                    <span class="ribbon7"><i class="fas fa-tags"></i><?php the_category( ' / ' ); ?></span>
+                                    <span class="ribbon7">
+                                        <i class="fas fa-tags"></i>
+                                        <?php the_category( ' / ' ); ?>
+                                    </span>
 
                                         <?php if (has_post_thumbnail()) : ?>
-                                            <a href="<?php the_permalink(); ?>"><div class="eye-catch img-thumbnail"><?php the_post_thumbnail(); ?></div></a>
+                                            <a href="<?php the_permalink(); ?>">
+                                                <div class="eye-catch img-thumbnail">
+                                                    <?php the_post_thumbnail(); ?>
+                                                </div>
+                                            </a>
                                         <?php else : ?>
-                                            <a href="<?php the_permalink(); ?>"><div class="eye-catch img-thumbnail"><img class="text-center" src="<?php bloginfo('template_url'); ?>/img/noimage.gif"/></a></div>
+                                            <a href="<?php the_permalink(); ?>">
+                                                <div class="eye-catch img-thumbnail">
+                                                    <img class="text-center" src="<?php bloginfo('template_url'); ?>/img/noimage.gif"/>
+                                                </div>
+                                            </a>
                                         <?php endif ; ?>
                                         <div class="card-body">
-                                            <a href="<?php the_permalink(); ?>"><h5 class="card-title"><?php the_title(); ?></h5></a>
-                                            <p class="card-text"><i class="far fa-calendar-alt"></i><?php the_time('Y/m/d'); ?></p>
+                                            <a href="<?php the_permalink(); ?>">
+                                                <h5 class="card-title">
+                                                    <?php the_title(); ?>
+                                                </h5>
+                                            </a>
+                                            <p class="card-text">
+                                                <i class="far fa-calendar-alt"></i>
+                                                <?php the_time('Y/m/d'); ?>
+                                            </p>
                                         </div>
                                     </div>
                                 <?php endwhile; endif;?>
@@ -66,6 +81,7 @@ Template Name: TopPageカスタムテンプレート
                             </p>
                             <a href="<?php echo get_category_link( 6 ); ?>"><button type="button" class="btn btn-danger mb-2">C センター</button></a>
                             <a href="<?php echo get_category_link( 7 ); ?>"><button type="button" class="btn btn-danger mb-2">PF パワーフォワード</button></a>
+                            <a href="<?php echo get_category_link( 2 ); ?>"><button type="button" class="btn btn-danger mb-2">CF コントロールフォワード</button></a>
                             <a href="<?php echo get_category_link( 8 ); ?>"><button type="button" class="btn btn-danger mb-2">SF スモールフォワード</button></a>
                             <a href="<?php echo get_category_link( 10 ); ?>"><button type="button" class="btn btn-danger mb-2">SG シューティングガード</button></a>
                             <a href="<?php echo get_category_link( 9 ); ?>"><button type="button" class="btn btn-danger mb-2">PG ポイントガード</button></a>
@@ -76,12 +92,12 @@ Template Name: TopPageカスタムテンプレート
                             </div>
                         </div>
                     </div>
-
+<!--
                     <div class="row m-5" id="business">
                         <div class="col-12 col-md-6 mb-5 text-left order-md-2">
                             <h2 class="top-h2">スキル一覧</h2>
                             <p class="mb-5">
-                            ポジション別のスキルの特色、使い方をガチ検証
+                            ポジション別のスキルの特色、使い方を検証
                             </p>
                             <?php
                                 $arg = array('posts_per_page' => 5,'orderby' => 'date','order' => 'DESC','category_name' => 'スキル');
@@ -91,6 +107,31 @@ Template Name: TopPageカスタムテンプレート
                             <?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
                                 <a href="<?php the_permalink(); ?>">
                                     <?php the_title(); ?>
+                                </a>
+                            <?php endforeach; ?>
+                            <?php endif; wp_reset_postdata();?>
+                        </div>
+                        <div class="col-12 col-md-6 order-md-1">
+                            <div class="img-wrap-left">
+                                <img class="img-left" src="<?php bloginfo('template_directory'); ?>/img/sl.png">
+                            </div>
+                        </div>
+                    </div>
+-->
+                    <div class="row m-5" id="business">
+                        <div class="col-12 col-md-6 mb-5 text-left order-md-2">
+                            <h2 class="top-h2">育成</h2>
+                            <p class="mb-5">
+                            効率よくキャラを育てるには！
+                            </p>
+                            <?php
+                                $arg = array('posts_per_page' => 5,'orderby' => 'date','order' => 'DESC','category_name' => '育成');
+                                $posts = get_posts( $arg );
+                                if( $posts ):
+                            ?>
+                            <?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
+                                <a href="<?php the_permalink(); ?>">
+                                    <?php the_title(); ?><br>
                                 </a>
                             <?php endforeach; ?>
                             <?php endif; wp_reset_postdata();?>
@@ -145,7 +186,9 @@ Template Name: TopPageカスタムテンプレート
                                         <div class="card">
                                             <span class="ribbon7"><i class="fas fa-tags"></i><?php the_category( ' / ' ); ?></span>
                                             <?php if (has_post_thumbnail()) : ?>
-                                                <a href="<?php the_permalink(); ?>"><div class="eye-catch img-thumbnail"><?php the_post_thumbnail(); ?></div></a>
+                                                <a href="<?php the_permalink(); ?>">
+                                                    <div class="eye-catch img-thumbnail"><?php the_post_thumbnail(); ?>
+                                                    </div></a>
                                             <?php else : ?>
                                                 <a href="<?php the_permalink(); ?>"><div class="eye-catch img-thumbnail"><img class="text-center" src="<?php bloginfo('template_url'); ?>/img/noimage.gif"/></a></div>
                                             <?php endif ; ?>

@@ -14,6 +14,16 @@
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c|Noto+Sans+JP&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/animate.css" type="text/css" charset="utf-8" media="screen" >
     <?php wp_head(); ?>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150280904-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-150280904-1');
+    </script>
 </head>
 
 <body>
@@ -39,6 +49,9 @@
                         </li>
                         <li class="nav-item">
                             <strong><a class="nav-link" href="<?php echo get_category_link( 3 ); ?>">アイテム</a></strong>
+                        </li>
+                        <li class="nav-item">
+                            <strong><a class="nav-link" href="<?php echo get_category_link( 12 ); ?>">育成</a></strong>
                         </li>
                         <li class="nav-item">
                             <strong><a class="nav-link" href="<?php echo get_category_link( 11 ); ?>">攻略Tips</a></strong>

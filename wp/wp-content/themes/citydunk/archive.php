@@ -16,7 +16,10 @@
     <div class="container-fluid">
         <div class="container">
             <div class="row justify-content-center bg-white radius">
-                <div class="col-12 p-5 text-center ">
+				<div class="col-12 pt-5 text-center ">
+					<?php dynamic_sidebar('topbar'); ?>
+				</div>
+				<div class="col-12 p-5 text-center ">
                     <h2 class="h2">
                     <?php
                         $current_cat = get_queried_object();
