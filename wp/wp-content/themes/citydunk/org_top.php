@@ -79,12 +79,13 @@ Template Name: TopPageカスタムテンプレート
                             <p class="mb-5">
                             キャラクターの評価や特色が気になる方はこちら！
                             </p>
-                            <a href="<?php echo get_category_link( 6 ); ?>"><button type="button" class="btn btn-danger mb-2">C センター</button></a>
-                            <a href="<?php echo get_category_link( 7 ); ?>"><button type="button" class="btn btn-danger mb-2">PF パワーフォワード</button></a>
-                            <a href="<?php echo get_category_link( 2 ); ?>"><button type="button" class="btn btn-danger mb-2">CF コントロールフォワード</button></a>
-                            <a href="<?php echo get_category_link( 8 ); ?>"><button type="button" class="btn btn-danger mb-2">SF スモールフォワード</button></a>
-                            <a href="<?php echo get_category_link( 10 ); ?>"><button type="button" class="btn btn-danger mb-2">SG シューティングガード</button></a>
-                            <a href="<?php echo get_category_link( 9 ); ?>"><button type="button" class="btn btn-danger mb-2">PG ポイントガード</button></a>
+                            <a href="<?php the_permalink( 56 ); ?>"><button type="button" class="btn btn-danger mb-2">C センター</button></a>
+                            <a href="<?php the_permalink( 170 ); ?>"><button type="button" class="btn btn-danger mb-2">PF パワーフォワード</button></a>
+                            <a href="<?php the_permalink( 193 ); ?>"><button type="button" class="btn btn-danger mb-2">CF コントロールフォワード</button></a>
+                            <a href="<?php the_permalink( 182 ); ?>"><button type="button" class="btn btn-danger mb-2">SF スモールフォワード</button></a>
+                            <a href="<?php the_permalink( 201 ); ?>; ?>"><button type="button" class="btn btn-danger mb-2">PG ポイントガード</button></a>
+                            <a href="<?php the_permalink( 208 ); ?>"><button type="button" class="btn btn-danger mb-2">SG シューティングガード</button></a>
+                            <a href="<?php the_permalink( 285 ); ?>"><button type="button" class="btn btn-danger mb-2">CG コンボガード</button></a>
                         </div>
                         <div class="col-12 col-md-6">
                             <div class="img-wrap-right">

@@ -45,16 +45,16 @@
                             <strong><a class="nav-link" href="<?php echo get_category_link( 4 ); ?>">キャラクター</a></strong>
                         </li>
                         <li class="nav-item">
-                            <strong><a class="nav-link" href="<?php echo get_category_link( 5 ); ?>">スキル</a></strong>
+                            <strong><a class="nav-link" href="<?php the_permalink( 327 ); ?>">ゲームガイド</a></strong>
                         </li>
                         <li class="nav-item">
-                            <strong><a class="nav-link" href="<?php echo get_category_link( 3 ); ?>">アイテム</a></strong>
+                            <strong><a class="nav-link" href="<?php echo get_category_link( 11 ); ?>">攻略</a></strong>
                         </li>
                         <li class="nav-item">
-                            <strong><a class="nav-link" href="<?php echo get_category_link( 12 ); ?>">育成</a></strong>
+                            <strong><a class="nav-link" href="<?php the_permalink( 259 ); ?>">コラム</a></strong>
                         </li>
                         <li class="nav-item">
-                            <strong><a class="nav-link" href="<?php echo get_category_link( 11 ); ?>">攻略Tips</a></strong>
+                            <strong><a class="nav-link" href="<?php the_permalink( 360 ); ?>">イベント</a></strong>
                         </li>
                     </ul>
                 </div>
