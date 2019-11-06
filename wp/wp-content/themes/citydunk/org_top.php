@@ -48,8 +48,9 @@ Template Name: TopPageカスタムテンプレート
                                             </a>
                                         <?php else : ?>
                                             <a href="<?php the_permalink(); ?>">
-                                                <div class="eye-catch img-thumbnail">
-                                                    <img class="text-center" src="<?php bloginfo('template_url'); ?>/img/noimage.gif"/>
+                                                <div class="eye-catch img-thumbnail" style="position:relative;">
+                                                    <img class="text-center" src="<?php bloginfo('template_url'); ?>/img/noimage2.png"/>
+                                                    <h2 class="image-in-text"><?php the_title(); ?></h2>
                                                 </div>
                                             </a>
                                         <?php endif ; ?>
@@ -191,7 +192,10 @@ Template Name: TopPageカスタムテンプレート
                                                     <div class="eye-catch img-thumbnail"><?php the_post_thumbnail(); ?>
                                                     </div></a>
                                             <?php else : ?>
-                                                <a href="<?php the_permalink(); ?>"><div class="eye-catch img-thumbnail"><img class="text-center" src="<?php bloginfo('template_url'); ?>/img/noimage.gif"/></a></div>
+                                            <div class="eye-catch img-thumbnail" style="position:relative;">
+                                                <img class="text-center" src="<?php bloginfo('template_url'); ?>/img/noimage2.png"/>
+                                                <h2 class="image-in-text"><?php the_title(); ?></h2>
+                                            </div>
                                             <?php endif ; ?>
                                             <div class="card-body">
                                                 <a href="<?php the_permalink(); ?>"><h5 class="card-title"><?php the_title(); ?></h5></a>

@@ -2,14 +2,9 @@
 
 
 
-<section class="container-fluid top-bg">
+<section class="container-fluid child-bg">
     <div class="container justify-content-center" style="padding-top:4.5rem;">
-        <div class="row justify-content-center view-wrap">
-            <div class="col-12 view">
-                <img class="img-fluid p-5" src="<?php bloginfo('template_directory'); ?>/img/logo.png">    
-            </div>
-		</div>
-	</div>
+    </div>
 </section>
 
 <section class="main-wrap">

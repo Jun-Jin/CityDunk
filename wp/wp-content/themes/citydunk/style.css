@@ -1,4 +1,4 @@
-﻿@charset "UTF-8";
+@charset "UTF-8";
 
 /*--------------------------------------------------------------
 Theme Name: citydunk original theme
@@ -8,6 +8,10 @@ Author: hayasan
 Author URI:
 Version: 1.0
 ---------------------------------------------------------------*/
+
+.navbar-brand {
+	font-size:14px;
+}
 
 .bg-purple {
     background-color: #b792b7!important;
@@ -19,6 +23,14 @@ Version: 1.0
     background-repeat: no-repeat;
     vertical-align: middle;
     height: 100vh;
+}
+
+.child-bg{
+    background: linear-gradient(-45deg, rgba(255, 49, 49, 0.8), rgba(93, 129, 255, 0.8)), url(img/main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    height: 30vh;
 }
 
 .bg-foot{
@@ -33,6 +45,13 @@ Version: 1.0
     width: 100%;
     display: table;
 }
+
+.view-wrap-child {
+    height: 20vh;
+    width: 100%;
+    display: table;
+}
+
 
 .view {
     display: table-cell;
@@ -70,6 +89,15 @@ Version: 1.0
     width: 400px;
 }
 
+.image-in-text{
+    font-size: 12px;
+    position: absolute;
+    top: 43%;
+    left: 30%;
+    color: white;
+    margin: 0;
+}
+
 @media (min-width: 768px) {
     .img-wrap-right {
         height: 500px;
@@ -86,13 +114,21 @@ Version: 1.0
         max-width: 1040px;
         left: -50px;
     }
-    
+
     .img-left {
         position: absolute;
         vertical-align: middle;
         border-style: none;
         right: 0;
         width: 800px;
+    }
+    .image-in-text{
+        font-size: 10px;
+        position: absolute;
+        top: 43%;
+        left: 30%;
+        color: white;
+        margin: 0;
     }
 }
 

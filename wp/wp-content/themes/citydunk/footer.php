@@ -12,23 +12,18 @@
       <div class="col-12 col-md-6 mb-3">
         <h2>Special Thanks</h2>
         <ol style="list-style-type: disc">
-        <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>イバン@JYZVzYbQYEKivRN 様</li>
+          <li>JagaBata@JagaBata15 様</li>
+          <li>千里@senli_chii 様</li>
+          <li>Avriey@Avriey4 様</li>
+          <li>冨岡 義勇@yyyyyk03 様</li>
         </ol>
       </div>
       <div class="col-12 col-md-6 mb-3">
         <h2>LINKS</h2>
         <ol style="list-style-type: disc">
           <li><a href="http://citydunk.joytea.jp" target="blank">シティダンク公式サイト</a></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+
         </ol>
       </div>
     </div>
@@ -45,7 +40,7 @@
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  <!-- 追加のCSSの読み込み -->   
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  <!-- 追加のCSSの読み込み -->
 <script src="<?php bloginfo('template_directory'); ?>/js/wow.min.js"></script>
 <?php wp_footer(); ?>
 
