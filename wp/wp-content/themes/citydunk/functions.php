@@ -2,6 +2,18 @@
 // カスタムメニュー
 register_nav_menu( 'navigation','ナビゲーション' );
 
+// キャラ能力比較用関数
+function player_ability_compare() {
+    wp_enqueue_style('style', get_stylesheet_uri());
+    wp_enqueue_script(
+        'get_player_abi_js',
+        get_template_directory_uri() . '/js/get_player_abi.js',
+        NULL,
+        1.0,
+        true
+    );
+}
+add_action('wp_enqueue_scripts', 'player_ability_compare');
 // 抜粋分の表示文字数を指定
 function my_excerpt_length($length) {
     return 50;
